@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { NumericFormat } from "react-number-format";
 
@@ -12,16 +11,10 @@ interface PillProps {
 const placeholderText = "0";
 
 export const Pill = ({ activeCurrency }: PillProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = (_curr: string) => {
-    setIsOpen((prev) => !prev);
-  };
-
   return (
     <>
       <div>
-        <div className="flex" onClick={() => setIsOpen((prev) => !prev)}>
+        <div className="flex">
           {activeCurrency} <FiChevronDown className="pt-1" />{" "}
         </div>
       </div>
