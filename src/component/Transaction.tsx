@@ -1,4 +1,4 @@
-import { currencies, rate } from "../constants/general";
+import { rate } from "../constants/general";
 import InputSection from "./InputSection";
 
 export default function Transaction() {
