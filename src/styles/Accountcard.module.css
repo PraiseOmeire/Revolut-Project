@@ -1,0 +1,25 @@
+.card {
+  padding: 0.5rem 7rem 0.5rem 1rem;
+  border-radius: 9px;
+  border: solid 2px #2768e3;
+  line-height: 1px;
+}
+.card:hover {
+  border: solid #5f8ced 2px;
+}
+.currName {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.currAbrev {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.amount {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.dolarCurr {
+  padding: 0.5rem 0.2rem 0.5rem 3rem;
+}

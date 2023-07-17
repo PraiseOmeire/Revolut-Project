@@ -1,16 +1,14 @@
 import AccountCard from "./component/AccountCard";
 import Transaction from "./component/Transaction";
-import "./index.css";
+import styles from "./styles/App.module.css";
 
 function App() {
   return (
     <>
-      <h1 className=" flex place-content-center text-3xl font-bold mb-5 mt-10 text-600">
-        Revolut
-      </h1>
-      <div className="flex place-content-center">
-        <div className="border border-solid border-indigo-600 pr-12 pl-10">
-          <div className="grid grid-cols-2 ">
+      <h1>Revolut</h1>
+      <div className={styles.app}>
+        <div>
+          <div className={styles.cards}>
             <AccountCard currencyName="Euro" currencyAbrev="Eur" amount={300} />
             <AccountCard
               currencyName="Dollar"
@@ -23,8 +21,8 @@ function App() {
               amount={300}
             />
           </div>
-          <div className="mt-3 mb-5 ml-5 mr-5 ">
-            <hr className="border-black-700"></hr>
+          <div className="mt-3 mb-5 ml-3 mr-3 ">
+            <hr className={styles.hr}></hr>
           </div>
           <div>
             <Transaction />
