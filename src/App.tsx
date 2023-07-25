@@ -1,11 +1,11 @@
 import AccountCard from "./component/AccountCard";
-import Transaction from "./component/Transaction";
+import Transaction from "./component/Transfer";
 import styles from "./styles/App.module.css";
 
 function App() {
   return (
     <>
-      <h1>Revolut</h1>
+      <h1 className={styles.header}>Revolut</h1>
       <div className={styles.app}>
         <div>
           <div className={styles.cards}>
