@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { NumericFormat } from "react-number-format";
 import styles from "../styles/inputSection.module.css";
@@ -14,21 +13,11 @@ const placeholderText = "0";
 
 export const Pill = ({ activeCurrency }: PillProps) => {
   // const tradedCurrencies = Object.values(currencies);
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <div>
-        <div className={styles.pill} onClick={() => setIsOpen((prev) => !prev)}>
-          {activeCurrency} <FiChevronDown className="pt-1" />{" "}
-        </div>
-        {/* {isOpen && (
-          <div>
-            {Object.values(currencies).map((curr) => (
-              // <p onClick={() => handleClick(curr)}>{curr}</p>
-            ))}
-          </div>
-        )} */}
+        {activeCurrency} <FiChevronDown className="pt-1" />{" "}
       </div>
     </>
   );
